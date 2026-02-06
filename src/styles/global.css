@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+:root {
+  --font-family: Helvetica, sans-serif;
+  --second-family: Helvetica, sans-serif;
+  --third-family: Inter, sans-serif;
+  line-height: 1.5;
+
+  --text-primary: rgb(255, 255, 255);
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --border-primary: rgba(255, 255, 255, 0.04);
+  --border-secondary: rgba(255, 255, 255, 0.12);
+  background-color: rgb(15, 10, 45);
+
+  font-family: var(--second-family);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--second-family);
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: calc((100vw - 320px) / (2560 - 320) * (56 - 18) + 18px);
+  margin: 0;
+  opacity: 0.6;
+
+  @media screen and (min-width: 321px) {
+    font-size: calc((100vw - 320px) / (2560 - 320) * (56 - 7) + 7px);
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: calc((100vw - 320px) / (2560 - 320) * (160 - 34) + 34px);
+  margin: 0;
+  line-height: 1;
+
+  @media screen and (min-width: 321px) {
+    font-size: calc((100vw - 320px) / (2560 - 320) * (160 - 20) + 20px);
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+ul {
+  margin: 24px 16px 0;
+}
+
+b {
+  color: var(--text-primary);
+}
+
+a {
+  font-weight: 500;
+  color: #f05;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #ba3ecd;
+  transition: all 0.5s ease;
+}
+
+button {
+  border-radius: 12px;
+  border: 1px solid transparent;
+  margin-top: 56px;
+  padding: 16px 24px;
+  width: 176px;
+  height: 52px;
+
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--font-family);
+  line-height: 111%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fff;
+  background-color: #fe0155;
+  cursor: pointer;
+  transition: all 1s ease;
+  transform: scale(1);
+}
+button:hover {
+  background-color: #ba3ecd;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
